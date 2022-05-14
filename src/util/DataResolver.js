@@ -1,9 +1,9 @@
 'use strict';
 
 const { Buffer } = require('node:buffer');
-const fs = require('node:fs');
 const path = require('node:path');
 const stream = require('node:stream');
+const { fs } = require('memfs');
 const fetch = require('node-fetch');
 const { Error: DiscordError, TypeError } = require('../errors');
 const Invite = require('../structures/Invite');
